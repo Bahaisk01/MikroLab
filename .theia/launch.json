@@ -11,12 +11,12 @@
             }
         },
         {
-            "name": "emptyProject",
+            "name": "Led Yanıp Sönme",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "emptyProject",
-                "resourceId": "/emptyProject"
+                "name": "Led Yanıp Sönme",
+                "resourceId": "/Led Yanıp Sönme"
             }
         }
     ]
