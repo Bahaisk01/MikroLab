@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MSP430F55xx_1.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MSP430F55xx_1.c",
+                "resourceId": "/MSP430F55xx_1.c"
+            }
+        },
+        {
+            "name": "emptyProject",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "emptyProject",
+                "resourceId": "/emptyProject"
+            }
+        }
+    ]
+}
