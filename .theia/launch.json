@@ -18,6 +18,33 @@
                 "name": "Led Yanıp Sönme",
                 "resourceId": "/Led Yanıp Sönme"
             }
+        },
+        {
+            "name": "Led deneme",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Led deneme",
+                "resourceId": "/Led deneme"
+            }
+        },
+        {
+            "name": "Buton",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Buton",
+                "resourceId": "/Buton"
+            }
+        },
+        {
+            "name": "Ders deneme",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Ders deneme",
+                "resourceId": "/Ders deneme"
+            }
         }
     ]
 }

@@ -31,6 +31,8 @@
  * --/COPYRIGHT--*/
 
 #include "driverlib.h"
+#include "intrinsics.h"
+#include "msp430f5xx_6xxgeneric.h"
 
 //******************************************************************************
 //!
@@ -39,4 +41,38 @@
 //******************************************************************************
 void main (void)
 {
+    WDTCTL = WDTPW | WDTHOLD;
+
+    P1DIR &= ~BIT1;
+    P1REN |= BIT1;
+    P1OUT |= BIT1;
+
+    P1DIR |= BIT0;
+    P1OUT &= ~BIT0;
+
+    P4DIR |= BIT7;
+    P4OUT &= ~BIT7;
+
+    int i=0;
+
+    while(1)
+    {
+    if(!(P1IN&BIT1))
+    _delay_cycles(50000);
+    if(!(P1IN&BIT1))
+    {
+    i++;
+       if(i%2==0)
+       {
+        P1OUT |= BIT0;
+        P4OUT &= ~BIT7;
+       }
+         else 
+       {
+        P4OUT |= BIT7;
+        P1OUT &= ~BIT0;
+       }
+        while (!(P1IN & BIT1));
+    }
+    }
 }
